@@ -1,0 +1,18 @@
+.worksItem{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: gold;
+  border-radius: 3px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.worksPreview{
+
+  img{
+    width: 45px;
+    height: 45px;
+  }
+}

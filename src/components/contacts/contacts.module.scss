@@ -1,0 +1,17 @@
+.Contacts{
+  height: 100vh;
+  background-color: grey;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  h2{
+    text-align: center;
+  }
+}
+.Footer{
+  padding: 10px;
+  background-color: indianred;
+  width: 100%;
+}

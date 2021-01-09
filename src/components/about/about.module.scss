@@ -1,0 +1,30 @@
+.about{
+  height: 100vh;
+  background-color: cornflowerblue;
+
+}
+.aboutContainer {
+  composes: container from '../../index.css';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.info{
+  width: 250px;
+  background-color: darkgray;
+}
+.imgWrapper{
+  margin-top: 150px;
+  height: 500px;
+  width: 500px;
+  background-color: cornsilk;
+}
+.hire{
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  background-color: darkkhaki;
+  width: 100%;
+  align-self: center;
+}

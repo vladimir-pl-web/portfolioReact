@@ -1,4 +1,36 @@
+
+
 header{
-  background-color: darkblue;
+  background-color: teal;
   height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 123;
 }
+.headerContainer{
+  composes: container from '../../index.css'
+}
+.navList{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 50px;
+  background-color: tomato;
+}
+  .navLink {
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: wheat;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .active{
+    background-color: green;
+    color: blue;
+  }

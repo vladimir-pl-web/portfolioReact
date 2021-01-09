@@ -1,0 +1,31 @@
+.Form{
+  width: 500px;
+  height: 500px;
+  background-color: lightgreen;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label{
+      text-align: center;
+    }
+    input{
+      height: 40px;
+    }
+    textarea{
+      height:100px;
+    }
+  }
+  :last-child{
+    flex-direction: row;
+    width: 100%;
+    button{
+      width: 50%;
+    }
+  }
+}

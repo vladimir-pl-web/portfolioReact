@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootStateType } from '../../redux/store';
 import { navType } from '../../redux/reducers/navigation';
 import { navigateTo } from '../../redux/actions/navigation';
+import Button from '../button/button';
 
  const Header = () => {
   const nav = useSelector<RootStateType, navType>(state => state.nav.navLinks)
@@ -11,25 +12,25 @@ import { navigateTo } from '../../redux/actions/navigation';
   const onNavHandler = (name: string) => {
     dispatch(navigateTo(name));
   }
-  const links = nav.map(({ name, active }) => {
+  const links = nav.map(({ name, active, to, iconCode }) => {
     const isActive = active && classes.active
     return (
-      <li key={name}
-        className={classes.navLink + ' ' + isActive}
-      onClick={()=>onNavHandler(name)}
-      >{name}
-        
+      <li key={name}>
+        <Button
+          name={name}
+          active={active}
+          to={to}
+          iconCode={iconCode}
+        />
       </li>
-    )
+    );
   })
   return (
-    <header className={classes.header }>
-      <div className = {classes.headerContainer}>
-        <h1>Vladimir </h1>  
+    <header className={classes.header}>
+      <div className={classes.headerContainer}>
+        <h4>Vladimir </h4>
         <nav>
-          <ul className={classes.navList}>
-            {links}
-          </ul>
+          <ul className={classes.navList}>{links}</ul>
         </nav>
       </div>
     </header>

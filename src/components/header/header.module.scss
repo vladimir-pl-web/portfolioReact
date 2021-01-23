@@ -1,11 +1,15 @@
 
 
 header{
-  background-color: teal;
+  display: flex;
+  background: black;
   height: 100px;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  z-index: 123;
+  color: #fff;
+  font-family: Poppins;
+  font-weight: 900;
+  
 }
 .headerContainer{
   composes: container from '../../index.css'
@@ -17,20 +21,8 @@ header{
   align-items: center;
   width: 600px;
   height: 50px;
-  background-color: tomato;
-}
   .navLink {
-    padding: 5px;
-    width: 120px;
-    height: 40px;
-    background-color: wheat;
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .active{
-    background-color: green;
-    color: blue;
-  }
+    
+}
+}
+ 

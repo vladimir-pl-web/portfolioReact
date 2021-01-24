@@ -1,16 +1,37 @@
-.skillItem{
-  margin: 10px;
-  padding: 10px;
+.skillItem {
+  margin-bottom: 30px;
   height: 180px;
   width: 300px;
-  border: darkgreen solid 2px;
-  border-radius: 5px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  img{
-    height: 80px;
-    width: 80px;
+  img {
+    height: 64px;
+    width: 64px;
+  }
+  h4 {
+    color: #fff;
+    font-family: Poppins;
+    margin: 15px 0 9px;
+    font-size: 20px;
+  }
+  div {
+    padding: 0 10px;
+    font-family: Poppins;
+    color: #eee;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+  }
+  &:nth-child(4n + 2) {
+    border-left: 2px solid #251170;
+    ;
+    
+  }
+  &:nth-child(4n + 3) {
+    border-left: 2px solid #251170;;
+    border-right: 2px solid #251170;;
   }
 }

@@ -12,7 +12,10 @@ header{
   
 }
 .headerContainer{
-  composes: container from '../../index.css'
+  composes: container from '../../index.css';
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .navList{
   padding: 5px;
@@ -21,8 +24,5 @@ header{
   align-items: center;
   width: 600px;
   height: 50px;
-  .navLink {
-    
-}
 }
  

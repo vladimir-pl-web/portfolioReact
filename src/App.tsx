@@ -10,7 +10,8 @@ function App() {
   return (
     <main className={classes.Main}>
       <Header />
-      <About />
+       {/* <About />  */}
+      <Skills />
       {/* <Skills />
       <Works />
       <Contacts /> */}

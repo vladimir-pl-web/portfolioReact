@@ -1,0 +1,38 @@
+.Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 60px;
+  margin: 10px 0 20px;
+  line-height: 60px;
+  font-weight: 800;
+
+  &:before {
+    content: "";
+    height: 3px;
+    width: 60px;
+    display: block;
+    background-color: #eb83f8;
+  }
+
+  &:after {
+    content: "";
+    height: 3px;
+    width: 60px;
+    display: block;
+    background-color: #eb83f8;
+  }
+}
+.Title.TitleSmall{
+  font-size: 40px;
+  &:after{
+    width: 100px;
+    margin-left: 20px;
+  }
+  &:before{
+    width: 100px;
+    margin-right: 20px;
+  }
+}

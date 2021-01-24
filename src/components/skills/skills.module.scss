@@ -1,11 +1,4 @@
-.skills{
-  height: 100%;
-  padding-top: 50px;
-  background-color: darkgoldenrod;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .skiilsContainer{
   composes: container from '../../index.css';
   display: flex;
@@ -13,12 +6,20 @@
   justify-content: center;
   align-items: center;
 }
+.Parallax{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover ;
+
+}
 .skillList{
+  position: relative;
   margin-top: 30px;
   width: 100%;
   padding: 20px 40px;
-  background-color: darkgray;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }

@@ -1,25 +1,27 @@
 import React from 'react'
+import { Parallax } from 'react-parallax'
 import classes from './contacts.module.scss'
-import Form from './form/form'
+import view from '../../assets/bg/view.jpg'
+import Form, { FormDataType } from './form/form'
+import Title from '../common/title/title'
+import Messengers from '../common/messengers/messengers'
 
 const Contacts = () => {
+
+  const onFormHandler = (data: FormDataType) => {
+    console.log(data);
+    
+  }
   return (
-    <div className={classes.Contacts}>
-      <h2>Contacts</h2>
-      <div className= {classes.ContactsContainer}>
-        <Form />
-      </div>
-      <footer className={classes.Footer}>
-        <div className={classes.FooterContainer}>
-          <address className={classes.Address}> 
-            <div>Phone</div>
-            <div>email</div>
-            <div>Skype</div>
-            <div>WatsUp</div>
-          </address>
+    <section>
+      <Parallax bgImage={view} strength={300} className={classes.ContactsParallax}>
+        <div className={classes.ContactsContainer}>
+          <Title label={"Call me"} type={"small"} />
+          <Form onSubmit={onFormHandler} />
+          <Messengers />
         </div>
-      </footer>
-    </div>
-  )
+      </Parallax>
+    </section>
+  );
 }
 export default Contacts

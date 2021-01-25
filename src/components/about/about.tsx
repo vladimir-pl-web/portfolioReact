@@ -3,7 +3,7 @@ import React from 'react'
 import particles from './particles.json'
 import m from '../../assets/photos/metalica.jpg'
 import Particles from "react-tsparticles";
-import Title from '../common/title';
+import Title from '../common/title/title';
 
 
 const About = () => {

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootStateType } from '../../redux/store';
 import { navType } from '../../redux/reducers/navigation';
 import { navigateTo } from '../../redux/actions/navigation';
-import Button from '../button/button';
+import Button from '../common/button/button';
 
  const Header = () => {
   const nav = useSelector<RootStateType, navType>(state => state.nav.navLinks)

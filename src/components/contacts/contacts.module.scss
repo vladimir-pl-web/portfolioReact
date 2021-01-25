@@ -1,17 +1,11 @@
-.Contacts{
-  height: 100vh;
-  background-color: grey;
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 50px;
-  h2{
-    text-align: center;
-  }
+.ContactsParallax{
+  composes: Parallax from '../skills/skills.module.scss'
 }
-.Footer{
-  padding: 10px;
-  background-color: indianred;
-  width: 100%;
+
+.ContactsContainer{
+  composes: container from '../../index.css';
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

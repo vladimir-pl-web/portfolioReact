@@ -80,3 +80,21 @@
     }
   }
 }
+.Button.send{
+  a{
+    &:after{
+      background-color:rgba(77, 5, 232, 1);
+    }
+  }
+}
+.Button.clear{
+  a{
+    &:after{
+      background: transparent;
+      border: 1px solid rgba(77, 5, 232, 1);
+    }
+    &:before{
+      background-color:rgba(77, 5, 232, 1);
+    }
+  }
+}

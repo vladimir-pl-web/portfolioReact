@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../button/button';
+import Button from '../../common/button/button';
 import classes from './worksItem.module.scss'
 
 export type WorksItemPropsType = {

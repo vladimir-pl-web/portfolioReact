@@ -4,18 +4,22 @@ import { loremIpsum } from 'lorem-ipsum';
 import SkillItem from './skillItem/skillItem';
 import { Parallax } from 'react-parallax'
 import space from '../../assets/photos/space.jpg'
-import Title from '../common/title';
+import Title from '../common/title/title';
+
   function importAllImages(r: any) {
     return r.keys().map(r);
-  }
+}
+  
 
-  export const getImageUrl = (i: number, src: string): string => {
-    const images = importAllImages(
+
+export const getImageUrl = (i: number, src: string): string => {
+    let images
+    
+    images = importAllImages(
       require.context(`../../assets/img`, false, /\.(png|jpe?g|svg)$/)
     );
     return images[i].default;
 };
-
 const Skills = () => {
 
 

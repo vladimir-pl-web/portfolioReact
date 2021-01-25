@@ -9,12 +9,12 @@ import Works from './components/works/works';
 function App() {
   return (
     <main className={classes.Main}>
-      <Header />
+      <Header /> 
        {/* <About />  */}
-      <Skills />
-      {/* <Skills />
-      <Works />
-      <Contacts /> */}
+       {/* <Skills />    */}
+      
+    <Works />  
+      {/* <Contacts />  */}
     </main>
   );
 }

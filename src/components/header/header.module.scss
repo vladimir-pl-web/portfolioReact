@@ -4,12 +4,12 @@ header{
   display: flex;
   background: black;
   height: 100px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   color: #fff;
   font-family: Poppins;
   font-weight: 900;
-  
+  z-index: 111111;
 }
 .headerContainer{
   composes: container from '../../index.css';

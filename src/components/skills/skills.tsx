@@ -11,12 +11,10 @@ import Title from '../common/title';
 
   export const getImageUrl = (i: number, src: string): string => {
     const images = importAllImages(
-      require.context("../../assets/img", false, /\.(png|jpe?g|svg)$/)
+      require.context(`../../assets/img`, false, /\.(png|jpe?g|svg)$/)
     );
     return images[i].default;
 };
-  
-
 
 const Skills = () => {
 

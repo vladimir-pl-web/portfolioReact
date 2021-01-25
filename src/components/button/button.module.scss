@@ -24,7 +24,7 @@
       bottom: 0;
       display: flex;
       justify-content: center;
-background-color: #251170;
+      background-color: #251170;
       color: #fff;
       -webkit-transition: 0.3s;
       transition: 0.3s;
@@ -62,45 +62,21 @@ background-color: #251170;
     }
   }
 }
-
-// .Button Button:before,
-// .Button a:before {
-//   content: 'Well';
-//   font-family: "Font Awesome\ 5 Free";
-//   font-size: 18px;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: transparent;
-//   color: #C49B66;
-//   border: 1px solid #C49B66;
-//   line-height: 38px;
-//   -webkit-transition: .3s;
-//   transition: .3s;
-//   -webkit-transform-origin: bottom;
-//   transform-origin: bottom;
-//   -webkit-transform: translateY(-100%) rotateX(90deg);
-//   transform: translateY(-100%) rotateX(90deg);
-// }
-
-// .Button Button:after,
-// .Button a:after {
-//   content: 'Hire Me';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   display: flex;
-//   justify-content: center;
-//   background: #C49B66;
-//   color: #fff;
-//   -webkit-transition: .3s;
-//   transition: .3s;
-//   -webkit-transform-origin: top;
-//   transform-origin: top;
-//   -webkit-transform: translateY(0) rotateX(0deg);
-//   transform: translateY(0) rotateX(0deg);
-// }
+.Button.url{
+  a{
+    &:after{
+      background-color:#5d00ac;
+    }
+  }
+}
+.Button.git{
+  a{
+    &:after{
+      background: transparent;
+      border: 1px solid #5d00ac;
+    }
+    &:before{
+      background-color:#5d00ac;
+    }
+  }
+}

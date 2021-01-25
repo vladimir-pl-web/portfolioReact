@@ -5,14 +5,16 @@ import {Link} from 'react-router-dom'
 
 export type ButtonType = {
   name: string
-  active: boolean
+  active?: boolean
   to: string
+  type?: string
   iconCode: string
 }
-const Button: React.FC<ButtonType> = ({ name, active, to, iconCode }) => {
-
+const Button: React.FC<ButtonType> = ({ name, active, to, iconCode, type }) => {
+  const btnTypes = [classes.Button];
+type && btnTypes.push(classes[type])
   return (
-    <div className={classes.Button}>
+    <div className={btnTypes.join(' ')}>
       <Link to={to} data-front={name} data-back={iconCode}></Link>
     </div>
   );

@@ -5,21 +5,9 @@ import SkillItem from './skillItem/skillItem';
 import { Parallax } from 'react-parallax'
 import space from '../../assets/photos/space.jpg'
 import Title from '../common/title/title';
-
-  function importAllImages(r: any) {
-    return r.keys().map(r);
-}
-  
+import { getImageUrl } from '../works/works';
 
 
-export const getImageUrl = (i: number, src: string): string => {
-    let images
-    
-    images = importAllImages(
-      require.context(`../../assets/img`, false, /\.(png|jpe?g|svg)$/)
-    );
-    return images[i].default;
-};
 const Skills = () => {
 
 

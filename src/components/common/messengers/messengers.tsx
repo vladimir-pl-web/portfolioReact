@@ -1,24 +1,46 @@
 import React from 'react'
-import phone from '../../../assets/icons/phone.svg';
-import skype from "../../../assets/icons/skype.svg";
-import whatsapp from "../../../assets/icons/whatsapp.svg";
-import telegram from "../../../assets/icons/telegram.svg";
+
 import classes from './messengers.module.scss'
+import { getImageUrl } from '../../works/works';
 
 const Messengers = () => {
+   
   const contactsArr = [
-    { src: phone, label: "12345678904" },
-    { src: skype, label: "123456789098" },
-    { src: whatsapp, label: "123456789098" },
-    { src: telegram, label: "123456789098" },
+    { name: "phone", src: getImageUrl(0, "icons"), label: "+371 26273354" },
+    { name: "skype", src: getImageUrl(1, "icons"), label: "Vlad P" },
+    { name: "telegram", src: getImageUrl(2, "icons"), label: "@VladimirPl371" },
+    { name: "whatsapp", src: getImageUrl(3, "icons"), label: "371 26273354" },
   ].map((el) => {
+    let number;
+
+    switch (el.name) {
+      case "phone":
+        number = "tel:+37126273354";
+        break;
+      case "skype":
+        number = "skype:Vlad P";
+        break;
+      case "telegram":
+        number = "tg://resolve?domain=@VladimirPl371";
+        break;
+      case "watsaspp":
+        number = "https://wa.me/37126273354";
+        break;
+      default:
+        number = "tel:+37126273354";
+        break;
+    }
+
     return (
-      <li key = {el.label} className={classes.MsgItem}>
-        <img src={el.src} alt={el.label} className={classes.MsglLogo}/>
-        <span className={classes.MsgText}>{ el.label}</span>
+      <li key={el.label} className={classes.MsgItem}>
+        <a href={number}>
+          <img src={el.src} alt={el.label} className={classes.MsglLogo} />
+          <span className={classes.MsgText}>{el.label}</span>
+        </a>
       </li>
-    )
-  })
+    );
+  });
+
   return (
     <ul className={classes.Messengers}>
       {contactsArr}

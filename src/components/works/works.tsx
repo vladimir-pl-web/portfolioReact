@@ -13,26 +13,30 @@ import WorksItem, { WorksItemPropsType } from './worksItem/worksItem';
     return r.keys().map(r);
   }
 
-  export const getImage = (i: number, src: string): string => {
-    const images = importAllImages(
-      require.context(`../../assets/photos`, false, /\.(png|jpe?g|svg)$/)
-    );
+export const getImageUrl = (i: number, src: string): string => {
+  let arg
+  if (src === 'photos') {arg =  require.context(`../../assets/photos`, false, /\.(png|jpe?g|svg)$/)}
+  if (src === "img") { arg = require.context(`../../assets/img`, false, /\.(png|jpe?g|svg)$/)}
+  if (src === "icons") {arg = require.context(`../../assets/icons`, false, /\.(png|jpe?g|svg)$/)}
+    const images = importAllImages(arg);
     return images[i].default;
 };
+
+
 const Works = () => {
   const worksArray = [
-    { technologies: "CSS", src:getImage(1,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "GIT", src:getImage(2,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Gulp", src:getImage(3,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "HTML", src:getImage(4,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "JS", src:getImage(5,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "React", src:getImage(6,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Redux", src:getImage(7,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Sass", src:getImage(8,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Storybook", src:getImage(9,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com', },
-    { technologies: "Typescript", src:getImage(10,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Webpack", src:getImage(11,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-        { technologies: "Webpack", src:getImage(12,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "CSS", src:getImageUrl(1,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "GIT", src:getImageUrl(2,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Gulp", src:getImageUrl(3,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "HTML", src:getImageUrl(4,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "JS", src:getImageUrl(5,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "React", src:getImageUrl(6,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Redux", src:getImageUrl(7,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Sass", src:getImageUrl(8,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Storybook", src:getImageUrl(9,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com', },
+    { technologies: "Typescript", src:getImageUrl(10,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Webpack", src:getImageUrl(11,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+        { technologies: "Webpack", src:getImageUrl(12,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
   ];
   const dispatch = useDispatch()
 

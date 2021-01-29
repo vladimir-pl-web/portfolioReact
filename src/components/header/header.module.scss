@@ -1,6 +1,4 @@
-
-
-header{
+header {
   display: flex;
   background: black;
   height: 100px;
@@ -11,18 +9,67 @@ header{
   font-weight: 900;
   z-index: 111111;
 }
-.headerContainer{
-  composes: container from '../../index.css';
+.headerContainer {
+  composes: container from "../../index.css";
   width: 100%;
   display: flex;
   justify-content: space-between;
+  .navList {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    @media screen and(max-width: 991px) {
+      display: none;
+    }
+  }
+  .Hamburger {
+    display: none;
+    border: 0;
+    padding: 12px;
+    background: none;
+    outline:none;
+    transform-origin: 16px 11px;
+    cursor: pointer;
+    &:hover {
+      span:nth-of-type(1) {
+        background-color:  #eb83f8;
+      }
+      span:nth-of-type(2) {
+        background-color: #251170;;
+      }
+      span:nth-of-type(3) {
+       background-color:  #eb83f8;
+      }
+    }
+    .HamburgerItem {
+      display: block;
+      width: 40px;
+      height: 5px;
+      margin-bottom: 7px;
+      background-color: #fff;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    @media screen and(max-width: 991px) {
+      display: block;
+    }
+  }
 }
-.navList{
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 600px;
-  height: 50px;
+.Hamburger.active{
+    span:nth-of-type(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      width: 40px;
+    }
+
+    span:nth-of-type(2) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    span:nth-of-type(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+      width: 40px;
+    }
 }
- 

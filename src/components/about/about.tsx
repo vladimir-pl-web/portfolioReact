@@ -18,7 +18,7 @@ const About = () => {
               <h2 className={classes.Name}>My name is Vladimir.</h2>
               <div className={classes.Text}>
                 I'm <span> REACT FRONT END DEVELOPER</span> and can help you
-                with a nice APP creating
+                with a nice APP creation
               </div>
 
               <div className={classes.Consider}>

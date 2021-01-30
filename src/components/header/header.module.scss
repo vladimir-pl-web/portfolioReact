@@ -8,31 +8,26 @@ header {
   font-family: Poppins;
   font-weight: 900;
   z-index: 111111;
+
 }
 .headerContainer {
   composes: container from "../../index.css";
   width: 100%;
   display: flex;
   justify-content: space-between;
-  .navList {
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 600px;
-    height: 50px;
-    @media screen and(max-width: 991px) {
-      display: none;
-    }
+position: relative;
+.headerContacts{
+  @media screen and(max-width:575px){
+    display: none;
   }
+}
   .Hamburger {
     display: none;
     border: 0;
     padding: 12px;
     background: none;
-    outline:none;
-    transform-origin: 16px 11px;
     cursor: pointer;
+
     &:hover {
       span:nth-of-type(1) {
         background-color:  #eb83f8;
@@ -55,6 +50,9 @@ header {
     @media screen and(max-width: 991px) {
       display: block;
     }
+      @media screen and(max-width:575px){
+   align-self: flex-start;
+  }
   }
 }
 .Hamburger.active{
@@ -73,3 +71,4 @@ header {
       width: 40px;
     }
 }
+

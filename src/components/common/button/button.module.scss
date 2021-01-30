@@ -26,11 +26,8 @@
       justify-content: center;
       background-color: #251170;
       color: #fff;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-      -webkit-transform-origin: top;
+      transition: 0.3s transform;
       transform-origin: top;
-      -webkit-transform: translateY(0) rotateX(0deg);
       transform: translateY(0) rotateX(0deg);
     }
     &:before {
@@ -47,11 +44,8 @@
       color: black;
       border: 1px solid #251170;
       line-height: 38px;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-      -webkit-transform-origin: bottom;
+      transition: 0.3s transform;
       transform-origin: bottom;
-      -webkit-transform: translateY(-100%) rotateX(90deg);
       transform: translateY(-100%) rotateX(90deg);
     }
     &:hover:after{
@@ -96,5 +90,28 @@
     &:before{
       background-color:rgba(77, 5, 232, 1);
     }
+  }
+}
+.Button.activeBtn{
+  a{
+              font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    &:after{
+      content: attr(data-back);
+      font-family: "Font Awesome\ 5 Free";
+      font-size: 28px;
+      background: transparent;
+      border: 1px solid #251170;
+    }
+    &:before{
+      content: attr(data-front);
+      background-color: #251170;
+      color: #fff;
+      font-size: 12px;
+
+    }
+
   }
 }

@@ -1,20 +1,23 @@
 import classes from './main.module.scss';
-import React from 'react';
-import About from './components/about/about';
-import Contacts from './components/contacts/contacts';
-import Header from './components/header/header';
-import Skills from './components/skills/skills';
-import Works from './components/works/works';
+import React, {Suspense} from 'react';
 import { Route } from 'react-router-dom';
+import Header from './components/header/header';
+const SuspendedContacts = React.lazy(()=> import('./components/contacts/contacts'))
+const SuspendedSkills = React.lazy(() => import('./components/skills/skills'));
+const SuspendedWorks = React.lazy(() => import('./components/works/works'));
+const SuspendedAbout = React.lazy(() => import('./components/about/about'));
 
 function App() {
   return (
     <main className={classes.Main}>
       <Header />
-      <Route path="/" exact render={() => <About />} />
-      <Route path="/skills" render={() => <Skills />} />
-      <Route path="/works" render={() => <Works />} />
-      <Route path="/contacts" render={() => <Contacts />} />
+      <Suspense
+        fallback={<div style={{ background: "black", height: "100vh", width: "100vw" }}>Loading...</div>}>
+        <Route path="/" exact render={() => <SuspendedAbout />} />
+        <Route path="/works" render={() => <SuspendedWorks />} />
+        <Route path="/skills" render={() => <SuspendedSkills />} />
+        <Route path="/contacts" render={() => <SuspendedContacts />} />
+      </Suspense>
     </main>
   );
 }

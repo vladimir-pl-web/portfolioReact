@@ -3,7 +3,7 @@ import React from 'react'
 import { loremIpsum } from 'lorem-ipsum';
 import SkillItem from './skillItem/skillItem';
 import { Parallax } from 'react-parallax'
-import space from '../../assets/photos/space.jpg'
+import space from '../../assets/bg/space.jpg'
 import Title from '../common/title/title';
 import { getImageUrl } from '../works/works';
 
@@ -36,10 +36,10 @@ const Skills = () => {
   })
 
   return (
-    <section>
+    <section style={{ background: "black" }}>
       <Parallax bgImage={space} strength={500} className={classes.Parallax}>
         <div className={classes.skiilsContainer}>
-          <Title label={'My skills and technologies'} type={'small'}/>
+          <Title label={"My skills and technologies"} type={"small"} />
           <ul className={classes.skillList}>{skillList}</ul>
         </div>
       </Parallax>

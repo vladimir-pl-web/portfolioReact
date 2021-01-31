@@ -11,7 +11,7 @@ const Contacts = () => {
     console.log(data);
   };
   return (
-    <section>
+    <section style = {{background:'black'}}>
       <Parallax
         bgImage={view}
         strength={300}

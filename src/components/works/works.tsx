@@ -6,7 +6,7 @@ import { loadWorks } from '../../redux/actions/works';
 import { RootStateType } from '../../redux/store';
 import Title from '../common/title/title';
 import classes from './works.module.scss'
-import space from "../../assets/photos/night4.jpg";
+import space from "../../assets/bg/night4.jpg";
 import WorksItem, { WorksItemPropsType } from './worksItem/worksItem';
 
   function importAllImages(r: any) {
@@ -25,18 +25,16 @@ export const getImageUrl = (i: number, src: string): string => {
 
 const Works = () => {
   const worksArray = [
-    { technologies: "CSS", src:getImageUrl(1,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "GIT", src:getImageUrl(2,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Gulp", src:getImageUrl(3,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "HTML", src:getImageUrl(4,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "JS", src:getImageUrl(5,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "React", src:getImageUrl(6,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Redux", src:getImageUrl(7,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Sass", src:getImageUrl(8,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Storybook", src:getImageUrl(9,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com', },
-    { technologies: "Typescript", src:getImageUrl(10,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-    { technologies: "Webpack", src:getImageUrl(11,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
-        { technologies: "Webpack", src:getImageUrl(12,'photos') , description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "CSS", src:getImageUrl(0,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "GIT", src:getImageUrl(1,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Gulp", src:getImageUrl(2,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "HTML", src:getImageUrl(3,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "JS", src:getImageUrl(4,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "React", src:getImageUrl(5,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Redux", src:getImageUrl(6,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Sass", src:getImageUrl(7,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com' },
+    { technologies: "Storybook", src:getImageUrl(8,'photos'), description: 'What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.', active: false, webUrl: 'https://www.google.com', gitUrl: 'https://github.com', }
+   
   ];
   const dispatch = useDispatch()
 
@@ -59,7 +57,7 @@ const Works = () => {
       )
         })
   return (
-    <section>
+    <section style={{ background: "black" }}>
       <Parallax
         bgImage={space}
         strength={300}

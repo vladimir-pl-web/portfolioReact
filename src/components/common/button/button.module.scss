@@ -61,12 +61,15 @@
     &:after{
       background-color:#5d00ac;
     }
+    &:before{
+      background: rgba(77, 5, 232, .3)
+    }
   }
 }
 .Button.git{
   a{
     &:after{
-      background: transparent;
+      background: rgba(77, 5, 232, .3);
       border: 1px solid #5d00ac;
     }
     &:before{

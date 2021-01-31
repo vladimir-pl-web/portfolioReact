@@ -1,20 +1,39 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { watchDescription } from '../../../redux/actions/works';
 import Button from '../../common/button/button';
 import classes from './worksItem.module.scss'
 
 export type WorksItemPropsType = {
+  id:number
   src: string
   webUrl: string
   gitUrl: string
-  technologies: string
   description: string
   active: boolean
 }
-const WorksItem:React.FC<WorksItemPropsType> = ({src, webUrl, gitUrl, technologies, description, active}) => {
+const WorksItem: React.FC<WorksItemPropsType> = ({ src, webUrl, gitUrl, description, active, id }) => {
+  const dispatch = useDispatch()
+  const descrHandler = (name: string, workId: number) => {
+    
+    name === "More" && dispatch(watchDescription(workId, true))
+    name === "Less" && dispatch(watchDescription(workId,false));
+  }
+
+  let common = description.slice(0, 140);
+  let rest = description.slice(140)
+  let expanded = active ? <span className={classes.Expanded}>{rest}</span> : ' ... '
+  let isMore = active ? 'Less' : 'More'
+  let more = <span className={classes.More} onClick={()=>descrHandler(isMore, id)}>{isMore}</span>;
+
   return (
     <li className={classes.worksItem}>
       <img src={src} alt="page preview" className={classes.Image} />
-      <div className={classes.Description}>{description}</div>
+      <div className={classes.Description}>
+        {`${common}`}
+        {expanded}
+        {more}
+      </div>
       <div className={classes.ItemOverlay}>
         <div className={classes.ButtonsWorks}>
           <Button name={"url"} to={webUrl} iconCode={"🔗 "} type={"url"} />

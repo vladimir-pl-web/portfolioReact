@@ -3,19 +3,17 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 320px;
   margin-bottom: 30px;
   margin-left: 10px;
   display: inline-block;
-  overflow: hidden;
   position: relative;
+  z-index: 0;
   cursor: pointer;
   border-radius: 3p;
   background: cover;
   @media screen and(max-width: 991px) {
     width: 90%;
     height: 600px;
-   
     margin: 0;
     margin-bottom: 100px;
   }
@@ -29,11 +27,18 @@
     }
   }
   .Description {
+    position: relative;
     color: #eee;
     font-family: Poppins;
     font-size: 14px;
-    padding-top: 10px;
+    padding: 10px 3px 3px 10px;
     background-color: rgba(128, 0, 0, 0.7);
+    z-index: 999999;
+    .More{
+      font-size: 16px;
+      color: blue;
+      text-decoration: underline;
+    }
     @media screen and(max-width: 991px) {
       margin-top: 10px;
     }

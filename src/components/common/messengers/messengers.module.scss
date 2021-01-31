@@ -1,20 +1,53 @@
-.Messengers{
-  width: 1000px;
+.Messengers {
+  padding: 50px 0;
+  min-width: 70%;
   display: flex;
   justify-content: space-between;
-  .MsgItem{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .MsglLogo{
-      width: 40px;
-      height: 40px;
-    }
-    .MsgText{
-      margin-left: 10px;
-      font-family: Poppins;
-      font-size: 14px;
-      color: white;
+  flex-wrap: wrap;
+   @media screen and (max-width: 767px){
+      min-width: 100%;
+   }
+      @media screen and (max-width: 575px){
+     justify-content: space-around;
+
+      li{
+        margin-bottom: 20px;
+        width: 150px;
+      }
+   }
+  .MsgItem {
+    height: 40px;
+    background-color: rgba(103, 128, 159, 0.6);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    .Link {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      align-items: center;
+
+      .MsglLogo {
+        width: 40px;
+        height: 40px;
+        @media screen and (max-width: 767px){
+                  width: 30px;
+        height: 30px;
+        }
+      }
+      .MsgText {
+        margin: 0 20px;
+        font-family: Poppins;
+        font-size: 18px;
+        color: white;
+        line-height: 38px;
+      @media screen and (max-width: 991px){
+        font-size: 14px;
+        margin: 0 5px;
+      }
+      }
     }
   }
 }

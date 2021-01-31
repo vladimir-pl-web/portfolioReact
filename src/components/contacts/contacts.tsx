@@ -17,11 +17,11 @@ const Contacts = () => {
         strength={300}
         className={classes.ContactsParallax}
       >
-        {/* <div className={classes.ContactsContainer}> */}
+        <div className={classes.ContactsContainer}> 
         <Title label={"Call me"} type={"small"} />
         <Form onSubmit={onFormHandler} />
         <Messengers />
-        {/* </div> */}
+        </div> 
       </Parallax>
     </section>
   );

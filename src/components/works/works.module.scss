@@ -9,9 +9,10 @@
   flex-direction: column;
   
   .WorksList {
-    width: 100%;
+    min-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 50px;
     flex-wrap: wrap;
     overflow-y: scroll;
     max-height: 700px;

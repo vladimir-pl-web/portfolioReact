@@ -33,9 +33,9 @@ const Messengers = () => {
 
     return (
       <li key={el.label} className={classes.MsgItem}>
-        <a href={number}>
+        <a href={number} className={classes.Link}>
           <img src={el.src} alt={el.label} className={classes.MsglLogo} />
-          <span className={classes.MsgText}>{el.label}</span>
+          <div className={classes.MsgText}>{el.label}</div>
         </a>
       </li>
     );

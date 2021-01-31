@@ -17,8 +17,8 @@ export const worksReducer = (state: WorksStateType = initState, action: WatchDes
     case WATCH_DESCRIPTION:
       return {
         ...state, works: state.works.map((el) => {
-          if (el.src === action.src) {
-            return{...el, active:true}
+          if (el.id === action.id) {
+            return{...el, active:action.active}
           }
         return{...el, active:false}
       })}

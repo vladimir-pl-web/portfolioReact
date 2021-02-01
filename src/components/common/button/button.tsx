@@ -23,7 +23,7 @@ const btnTypes = [classes.Button];
   }
   
   let btnLink =
-    type && type ? (
+    type && type !=='clear' && type !== 'submit' ? (
       <a target="_blank" href={to} data-front={name} data-back={iconCode}></a>
     ) : (
       <Link to={to} data-front={name} data-back={iconCode}></Link>

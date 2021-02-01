@@ -15,6 +15,7 @@
     "@types/react-router": "^5.1.11",
     "@types/redux-form": "^8.3.1",
     "@types/sass": "^1.16.0",
+    "formik": "^2.2.6",
     "lorem": "^0.4.0",
     "lorem-ipsum": "^2.0.3",
     "react": "^17.0.1",

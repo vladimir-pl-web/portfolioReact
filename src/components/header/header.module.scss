@@ -1,5 +1,6 @@
 header {
   display: flex;
+  padding: 10px;
   background: black;
   height: 100px;
   position: fixed;
@@ -15,6 +16,9 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media screen and(max-width:575px){
+    justify-content: flex-end;
+  }
 position: relative;
 .headerContacts{
   @media screen and(max-width:575px){
@@ -51,7 +55,7 @@ position: relative;
       display: block;
     }
       @media screen and(max-width:575px){
-   align-self: flex-start;
+   align-self: flex-end;
   }
   }
 }

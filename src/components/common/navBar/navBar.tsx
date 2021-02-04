@@ -42,7 +42,9 @@ const NavBar:React.FC<NavPropsType> = ({isOpen, onMenuClose}) => {
         </li>
       );
     });
-  const isVisible = isOpen &&  classes.active;
+  const isVisible = isOpen && classes.active;
+  
+  
   return <ul className={classes.navList + ' ' + isVisible}>{links}</ul>;
 }
 export default NavBar

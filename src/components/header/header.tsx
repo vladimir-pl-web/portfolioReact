@@ -1,17 +1,21 @@
 import classes from './header.module.scss';
-import React, { useState } from 'react'
+
 import NavBar from '../common/navBar/navBar';
 
- const Header = () => {
 
-  const [isMenuOpen, toggleMenu] = useState<boolean>(false);
-   let isActive = isMenuOpen && classes.active
+type HeaderPropsType = {
+  isMenuOpen: boolean
+  onMenuHandler: (value:boolean)=>void
+}
+ const Header:React.FC<HeaderPropsType> = ({isMenuOpen, onMenuHandler}) => {
+   let isActive = isMenuOpen && classes.active 
+ 
    
    const toggleMenuMode = () => {
-     toggleMenu(!isMenuOpen);
+     onMenuHandler(!isMenuOpen);
    }
    const onClose =()=> {
-     toggleMenu(false)
+     onMenuHandler(false);
    }
   return (
     <header className={classes.header}>
@@ -22,7 +26,7 @@ import NavBar from '../common/navBar/navBar';
             Email: vladimirplotnikov371@gmail.com
           </h4>
         </div>
-        <NavBar isOpen={isMenuOpen} onMenuClose={onClose}/>
+        <NavBar isOpen={isMenuOpen} onMenuClose={onClose} />
         <div
           className={classes.Hamburger + " " + isActive}
           onClick={toggleMenuMode}
@@ -32,7 +36,6 @@ import NavBar from '../common/navBar/navBar';
           <span className={classes.HamburgerItem}></span>
         </div>
       </div>
-      
     </header>
   );
 }

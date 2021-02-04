@@ -136,7 +136,7 @@ const Works = () => {
       >
         <div className={classes.worksContainer}>
           <Title label={"Thats what I can do for you"} type={"small"} />
-          <ul className={classes.WorksList}>{worksCurrentList}</ul>
+          <div className={classes.WorksList}>{worksCurrentList}</div>
         </div>
       </Parallax>
     </section>

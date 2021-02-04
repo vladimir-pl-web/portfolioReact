@@ -22,16 +22,17 @@ const WorksItem: React.FC<WorksItemPropsType> = ({ src, webUrl, gitUrl, descript
 
   let common = description.slice(0, 140);
   let rest = description.slice(140)
-  let expanded = active ? <span className={classes.Expanded}>{rest}</span> : ' ... '
+
+  let expanded = active ?  rest  : ' ... '
   let isMore = active ? 'Less' : 'More'
+  let isActiveClass = active && classes.active
   let more = <span className={classes.More} onClick={()=>descrHandler(isMore, id)}>{isMore}</span>;
 
   return (
-    <li className={classes.worksItem}>
+    <div className={classes.worksItem}>
       <img src={src} alt="page preview" className={classes.Image} />
-      <div className={classes.Description}>
-        {`${common}`}
-        {expanded}
+      <div className={classes.Description + " " + isActiveClass}>
+        {`${common}${expanded}`}
         {more}
       </div>
       <div className={classes.ItemOverlay}>
@@ -40,12 +41,12 @@ const WorksItem: React.FC<WorksItemPropsType> = ({ src, webUrl, gitUrl, descript
           <Button name={"code"} to={gitUrl} iconCode={"💻"} type={"git"} />
         </div>
         <div className={classes.Follow}>
-          <h4 className={classes.Web}>Click "WEB" to see the app</h4>
+          <h4 className={classes.Web}>Click "URL" to see the app</h4>
           <h5 className={classes.Git}>Click "CODE" to see github</h5>
-          <h5 className={classes.Git}>Or scroll down to see more</h5>
+          <h5 className={classes.Git}>Or "More" to see additional info</h5>
         </div>
       </div>
-    </li>
+    </div>
   );
 }
 export default WorksItem

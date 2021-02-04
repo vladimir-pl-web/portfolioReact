@@ -3,37 +3,43 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   margin-left: 10px;
   display: inline-block;
   position: relative;
-  z-index: 0;
   cursor: pointer;
   border-radius: 3p;
   background: cover;
+  &:nth-child(1n+7){
+   margin-bottom: none;
+  }
   @media screen and(max-width: 991px) {
-    width: 90%;
+    width: 80%;
     height: 600px;
     margin: 0;
     margin-bottom: 100px;
+  }
+  @media screen and(max-width: 768px){
+    width: 98%;
   }
   .Image {
     width: 400px;
     height: 250px;
     opacity: 0.7;
+    object-fit: cover;
     @media screen and(max-width: 991px) {
       width: 100%;
       height: 400px;
     }
   }
   .Description {
-    position: relative;
     color: #eee;
     font-family: Poppins;
     font-size: 14px;
-    padding: 10px 3px 3px 10px;
-    background-color: rgba(128, 0, 0, 0.7);
-    z-index: 999999;
+    font-weight: 500;
+    padding: 15px;
+    letter-spacing: 0.5px;
+    background-color:grey;
     .More{
       font-size: 16px;
       color: blue;
@@ -109,11 +115,11 @@ height: 400px;
       align-self: auto;
     }
     &:hover:before {
-      background: rgba(101, 67, 33, 0.7);
+      background:rgba(37, 17, 112, .7);
       width: 100%;
     }
     &:hover:after {
-      background: rgba(101, 67, 33, 0.7);
+      background:  rgba(37, 17, 112, .7);
       width: 100%;
     }
     &:hover .Follow .Git {
@@ -136,3 +142,7 @@ height: 400px;
     z-index: 1234;
   }
 }
+ .Description.active{
+   position: absolute;
+   z-index: 999999;
+ }

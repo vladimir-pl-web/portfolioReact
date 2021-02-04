@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+
   .WorksList {
     min-width: 100%;
     display: flex;
@@ -16,6 +16,18 @@
     flex-wrap: wrap;
     overflow-y: scroll;
     max-height: 700px;
+    @media screen and(max-width: 1200px) {
+      padding: 0 30px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+     @media screen and(max-width: 991px) {
+       justify-content: center;
+     }
+       @media screen and(max-width: 768px){
+    padding: 0;
+  }
     &::-webkit-scrollbar {
       width: 10px;
       background-color: rgba(37, 17, 112, 0.9);

@@ -1,7 +1,7 @@
 import classes from './about.module.scss'
 import React from 'react'
 import particles from './particles.json'
-import m from '../../assets/bg/metalica.jpg'
+import m from '../../assets/bg/me.jpg'
 import Particles from "react-tsparticles";
 import Title from '../common/title/title';
 

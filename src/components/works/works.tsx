@@ -29,25 +29,25 @@ const Works = () => {
       id: 1,
       src: getImageUrl(0, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "Organizer. You can handle your tasks as you want. Add, delete tasks and task lists, change names, statuses, sort tasks and so on. The app is fully synchronized with back-and. Following technologies were used: React(hooks), Redux(Redux toolkit), Type script, Material UI, REST api, Thunks, Unit tests(other branch)",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/organizer",
+      gitUrl: "https://github.com/VovanVovanic/organizer",
     },
     {
       id: 2,
       src: getImageUrl(1, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentationWhat is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "An app provides visual info about Star wars Universe. You can switch between ships, characters and planets, find out tne information and photo(if provided by server)of specific item. The App was created with React(hooks), Redux, REST api(Thunks), Typescript, Bootstrap",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/starwars-database",
+      gitUrl: "https://github.com/VovanVovanic/starwars-database",
     },
     {
       id: 3,
       src: getImageUrl(2, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "This is the social network. The app development still in progress, however it's already synchronized with server and provides loginization, registration, follow/unfollow users, adding messages. Live chat and some other features will be done at the nearest time. The app is build with React(hooks and class components), Redux, Typescript, Redux Thunks, Ant Design",
       active: false,
       webUrl: "https://www.google.com",
       gitUrl: "https://github.com",
@@ -56,55 +56,56 @@ const Works = () => {
       id: 4,
       src: getImageUrl(3, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "A quiz app. You can add quizzes, answer questions, and see your progress. Synchronized with back end(Firebase). Created with React(class components) Redux, Thunks, SCSS",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/react-quiz-list-learning",
+      gitUrl: "https://github.com/VovanVovanic/react-quiz-list-learning",
     },
     {
       id: 5,
       src: getImageUrl(4, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "Another qiuz project. Still in progress. You can create, delete, change learning cards and cards pack, follow yours and other people progress. The app is creating with React(hooks), Redux, Thunks, Type script, Material UI, SCSS",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/teamProject",
+      gitUrl: "https://github.com/VovanVovanic/teamProject",
     },
     {
       id: 6,
       src: getImageUrl(5, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "TODO. Classic app for all developers 😊 Just a beginning of my react learning. Made only with React class components and Bootstrap",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/todo",
+      gitUrl: "https://github.com/VovanVovanic/todo",
     },
     {
       id: 7,
       src: getImageUrl(6, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+        "Just an example of landing page. Fake burger shop landing page with slider, accordions, smooth scroll. Created with HTML5, SCSS, Vanilla JS. Build with Gulp",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://vovanvovanic.github.io/burgerLanding/dist/index.html",
+      gitUrl: "https://github.com/VovanVovanic/burgerLanding",
     },
     {
       id: 8,
       src: getImageUrl(7, "photos"),
       description:
-        "What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. ",
+        "Another example of landing page. Fake pulsometer shop with small animation, slider, tabs, modals, smooth scroll. Made with HTML5, SCSS, Vanilla js, Font awesome. Build with Gulp",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://vovanvovanic.github.io/pulseLanding/dist/index.html",
+      gitUrl: "https://github.com/VovanVovanic/pulseLanding",
     },
     {
       id: 9,
       src: getImageUrl(8, "photos"),
-      description:
-        "What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. What is the expected behavior? The expected behavior is an absence of error. I have read the documentation and did everything as was wrote in the documentation.",
+      description: 
+        "And one more landing example. Fake diet food provider's shop. Has a modal, slider, daily kkal calculation, timer for the end of the offer. Made with Vanilla JS, HTML5, SCSS. Build with Gulp",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl:
+        "https://vovanvovanic.github.io/foodDietLandingPureJs/dist/index.html",
+      gitUrl: "https://github.com/VovanVovanic/foodDietLandingPureJs",
     },
   ];
   const dispatch = useDispatch()

@@ -49,8 +49,8 @@ const Works = () => {
       description:
         "This is the social network. The app development still in progress, however it's already synchronized with server and provides loginization, registration, follow/unfollow users, adding messages. Live chat and some other features will be done at the nearest time. The app is build with React(hooks and class components), Redux, Typescript, Redux Thunks, Ant Design",
       active: false,
-      webUrl: "https://www.google.com",
-      gitUrl: "https://github.com",
+      webUrl: "https://VovanVovanic.github.io/typeScriptReactSocialNet",
+      gitUrl: "https://github.com/VovanVovanic/typeScriptReactSocialNet",
     },
     {
       id: 4,
@@ -100,7 +100,7 @@ const Works = () => {
     {
       id: 9,
       src: getImageUrl(8, "photos"),
-      description: 
+      description:
         "And one more landing example. Fake diet food provider's shop. Has a modal, slider, daily kkal calculation, timer for the end of the offer. Made with Vanilla JS, HTML5, SCSS. Build with Gulp",
       active: false,
       webUrl:

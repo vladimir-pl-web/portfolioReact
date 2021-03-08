@@ -9,4 +9,24 @@
   justify-content: space-between;
   flex-direction: column;
   min-height: 90vh;
+  position: relative;
+}
+.message{
+  width: 40%;
+  height: 300px;
+  text-align: center;
+  background-color: beige;
+  border-radius: 6px;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message.error{
+  background-color: coral;
+  color: red
 }

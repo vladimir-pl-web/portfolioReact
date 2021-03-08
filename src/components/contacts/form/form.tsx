@@ -1,5 +1,7 @@
 import { useFormik } from 'formik';
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { sendMail } from '../../../redux/actions/form';
 import Button from '../../common/button/button';
 import classes from './form.module.scss'
 
@@ -13,6 +15,7 @@ type FormikErrorType = {
 
 
 const Form = () => {
+  const dispatch = useDispatch()
 const formik = useFormik({
   initialValues: {
     name: "",
@@ -45,7 +48,7 @@ const formik = useFormik({
     return errors;
   },
   onSubmit: (values) => {
-    alert(JSON.stringify(values));
+    dispatch(sendMail(values));
     formik.resetForm()
   },
 });

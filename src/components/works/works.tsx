@@ -44,15 +44,6 @@ const Works = () => {
       gitUrl: "https://github.com/VovanVovanic/starwars-database",
     },
     {
-      id: 3,
-      src: getImageUrl(2, "photos"),
-      description:
-        "This is the social network. The app development still in progress, however it's already synchronized with server and provides loginization, registration, follow/unfollow users, adding messages. Live chat and some other features will be done at the nearest time. The app is build with React(hooks and class components), Redux, Typescript, Redux Thunks, Ant Design",
-      active: false,
-      webUrl: "https://VovanVovanic.github.io/typeScriptReactSocialNet",
-      gitUrl: "https://github.com/VovanVovanic/typeScriptReactSocialNet",
-    },
-    {
       id: 4,
       src: getImageUrl(3, "photos"),
       description:
@@ -60,15 +51,6 @@ const Works = () => {
       active: false,
       webUrl: "https://VovanVovanic.github.io/react-quiz-list-learning",
       gitUrl: "https://github.com/VovanVovanic/react-quiz-list-learning",
-    },
-    {
-      id: 5,
-      src: getImageUrl(4, "photos"),
-      description:
-        "Another qiuz project. Still in progress. You can create, delete, change learning cards and cards pack, follow yours and other people progress. The app is creating with React(hooks), Redux, Thunks, Type script, Material UI, SCSS",
-      active: false,
-      webUrl: "https://VovanVovanic.github.io/teamProject",
-      gitUrl: "https://github.com/VovanVovanic/teamProject",
     },
     {
       id: 6,
